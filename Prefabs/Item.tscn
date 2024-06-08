@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1c874edb17ft"]
+
+[ext_resource type="Texture2D" uid="uid://bgvt84qmfhcki" path="res://Sprites/Lamp.png" id="1_03ufa"]
+[ext_resource type="Script" path="res://Prefabs/Item.gd" id="1_rgkk1"]
+
+[node name="Item" type="Node2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_rgkk1")
+Position = Vector2(1, 0)
+
+[node name="Lamp" type="Sprite2D" parent="."]
+self_modulate = Color(0, 0, 0, 1)
+texture = ExtResource("1_03ufa")

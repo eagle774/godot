@@ -1,8 +1,10 @@
-[gd_scene format=3 uid="uid://cdbilwmf3v3w5"]
+[gd_scene load_steps=2 format=3 uid="uid://cdbilwmf3v3w5"]
 
-[node name="Label" type="Label"]
-offset_left = 467.0
-offset_top = 304.0
-offset_right = 560.0
-offset_bottom = 327.0
-text = "Hello world!"
+[ext_resource type="PackedScene" uid="uid://b1c874edb17ft" path="res://Prefabs/Item.tscn" id="2_bq4qv"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Landscape" type="Node2D" parent="."]
+
+[node name="Item" parent="Landscape" instance=ExtResource("2_bq4qv")]
+Position = Vector2(2, 2)
